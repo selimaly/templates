@@ -1,0 +1,11 @@
+{
+  "select_language" : "Выберите язык",
+  "cancel": "Отмена",
+  "yes": "Да",
+  "no": "Нет",
+  "wannaLogout": "Хотите выйти из системы?",
+  "wannaDelete": "Вы хотите удалить?",
+  "themeMode": "Тема",
+  "darkMode": "Темный режим",
+  "lightMode": "Светлый режим"
+}

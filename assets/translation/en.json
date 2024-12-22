@@ -1,0 +1,11 @@
+{
+  "select_language" : "Select Language",
+  "cancel": "Cancel",
+  "yes": "Yes",
+  "no": "No",
+  "wannaLogout": "Do you want to logout?",
+  "wannaDelete": "Do you want to delete?",
+  "themeMode": "Theme mode",
+  "darkMode": "Dark mode",
+  "lightMode": "Light mode"
+}
