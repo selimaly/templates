@@ -7,5 +7,7 @@
   "wannaDelete": "Do you want to delete?",
   "themeMode": "Theme mode",
   "darkMode": "Dark mode",
-  "lightMode": "Light mode"
+  "lightMode": "Light mode",
+  "addAddress": "Add Address",
+  "selectAddress": "Select Address"
 }

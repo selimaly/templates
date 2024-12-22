@@ -7,5 +7,7 @@
   "wannaDelete": "Вы хотите удалить?",
   "themeMode": "Тема",
   "darkMode": "Темный режим",
-  "lightMode": "Светлый режим"
+  "lightMode": "Светлый режим",
+  "addAddress": "Добавить адрес",
+  "selectAddress": "Выберите адрес"
 }

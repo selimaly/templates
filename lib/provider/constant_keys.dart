@@ -8,4 +8,6 @@ abstract class ConstantKeys {
   static const themeMode = 'themeMode';
   static const darkMode = "darkMode";
   static const lightMode = "lightMode";
+  static const addAddress = "addAddress";
+  static const selectAddress = "selectAddress";
 }
