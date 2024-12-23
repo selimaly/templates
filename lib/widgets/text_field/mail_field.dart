@@ -10,11 +10,12 @@ class EmailField extends StatelessWidget {
   const EmailField({
     super.key,
     required this.controller,
-    required this.hintText,
+    this.hintText,
+    this.labelText,
   });
 
   final TextEditingController controller;
-  final String hintText;
+  final String? hintText, labelText;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,8 @@ class EmailField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       decoration: InputDecoration(
-        labelText: hintText,
+        labelText: labelText,
+        hintText: hintText,
         filled: true,
         fillColor: theme.isDark ? AppConstants.darkInputColor : AppConstants.lightInputColor,
         border: OutlineInputBorder(

@@ -12,11 +12,12 @@ class PhoneField extends StatelessWidget {
   PhoneField({
     super.key,
     required this.controller,
-    required this.text
+    this.hintText,
+    this.labelText,
   });
 
   final TextEditingController controller;
-  final String text;
+  final String? hintText, labelText;
 
   var maskFormatter = MaskTextInputFormatter(
       mask: '+993 ## ######',
@@ -31,7 +32,8 @@ class PhoneField extends StatelessWidget {
       inputFormatters: [maskFormatter],
       keyboardType: TextInputType.phone,
       decoration: InputDecoration(
-        labelText: text,
+        labelText: labelText,
+        hintText: hintText,
         filled: true,
         fillColor: theme.isDark? AppConstants.darkInputColor : AppConstants.lightInputColor,
         border: OutlineInputBorder(

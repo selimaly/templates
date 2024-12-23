@@ -10,11 +10,12 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
     required this.controller,
-    required this.text
+    this.hintText,
+    this.labelText,
   });
 
   final TextEditingController controller;
-  final String text;
+  final String? hintText, labelText;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,8 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       controller: controller,
       decoration: InputDecoration(
-        labelText: text,
+        labelText: labelText,
+        hintText: hintText,
         filled: true,
         fillColor: theme.isDark? AppConstants.darkInputColor : AppConstants.lightInputColor,
         border: OutlineInputBorder(

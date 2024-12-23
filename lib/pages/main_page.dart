@@ -26,11 +26,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  TextEditingController passwordController = TextEditingController();
-  TextEditingController phoneController = TextEditingController();
-  TextEditingController customController = TextEditingController();
-  TextEditingController priceController = TextEditingController();
-  TextEditingController emailController  = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,17 +71,6 @@ class _MainPageState extends State<MainPage> {
                       builder: (context) => const DeleteDialog(),
                     );
                   }, text: ConstantKeys.wannaDelete.tr()),
-                  SizedBox(height: 10.adaptedPx(context),),
-                  PasswordField(controller: passwordController, text: "Password"),
-                  SizedBox(height: 10.adaptedPx(context),),
-                  PhoneField(controller: phoneController, text: 'Phone number'),
-                  SizedBox(height: 10.adaptedPx(context),),
-                  PriceField(controller: priceController, text: "Price"),
-                  SizedBox(height: 10.adaptedPx(context),),
-                  CustomTextField(controller: customController, text: "Custom"),
-                  SizedBox(height: 10.adaptedPx(context),),
-                  EmailField(controller: emailController, hintText: 'Email Address',
-                  ),
                 ],
               ),
             ),
